@@ -8,16 +8,6 @@ from imdbpie import Imdb
 
 
 app = Flask(__name__)
-@app.route('/api1', methods=['GET'])
-def api1():
-    print "Hello I am in api1"
-    imdb = Imdb()
-    var1 = imdb.top_250()
-    """var2 = imdb.search_for_title("FightClub")
-    print var2
-    #req = request.var1"""
-    return jsonify(var1)
-    
 
 @app.route('/', methods=['GET'])
 def index():
