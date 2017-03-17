@@ -9,9 +9,8 @@ from imdbpie import Imdb
 
 app = Flask(__name__)
 
-@app.route('/', methods=['GET'])
+@app.route('/')
 def index():
-    print "Hello I am in index"
     return render_template('index.html')
     
     
